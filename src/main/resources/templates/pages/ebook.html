@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> MentoriaT3ch </title>
+  <!-- Compiled and minified CSS -->
+
+  <link rel="shortcut icon" href="img/logoRoxo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+</script>
+
+<body>
+
+
+<nav class="black">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo center grey-text">MentoriaT3ch</a>
+  </div>
+</nav>
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img width="150" src="img/bg.jpg">
+  </div>
+</div>
+
+<div class="section black">
+  <div class="row container header center-align">
+    <div class="row">
+      <h2 class="header grey-text">Obrigado(a)  </h2>
+      <h5 class="grey-text text-darken-3 lighten-3">
+        Faça o download dos ebook's de Java e Arquiteturas Web
+      </h5>
+
+      <tr th:each="ebooks: ${ebook}"></tr>
+    </div>
+
+    <div class="input-field col s12">
+      <a class="btn waves-effect waves-light"
+         href="img/ebookJava.pdf" download> Baixar o ebook Java</a>
+      <a class="btn waves-effect waves-light"
+         href="img/ebookCss3Web.pdf" download> Baixar o ebook Arquitetura Web </a>
+    </div>
+
+  </div>
+</div>
+<div class="parallax-container ">
+  <div class="parallax ">
+    <img width="250 " src="img/img2.jpg">
+  </div>
+</div>
+
+<script src="statics/js/main.js"></script>
+
+</body>
+
+</html>
