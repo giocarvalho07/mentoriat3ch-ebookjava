@@ -48,10 +48,17 @@
     </div>
     <div class="col-lg-4 center" style="margin: 15px">
       <h2 class="font-weight-black text-danger"> Obrigado(a) </h2>
-      <h5 class="font-weight-light text-light"> Você acabou de realizar o download do nosso e-book </h5>
-      <tr th:each="ebooks: ${ebook}"></tr>
-      <a href="img/ebookSpring.pdf" download class="btn text-white" style="background-color: #dc3545!important;">
-        Baixe o e-book agora!
+      <h3 class="font-weight-light text-light"> Neste
+        <span class="text-danger" style="font-family: 'Courgette', cursive";> e-book gratuito  </span>
+      </h3>
+      <h3 class="font-weight-black text-light" > Você vai aprender programação
+        <span class="text-danger" style="font-family: 'Courgette', cursive";>
+       #naPrática 💻
+      </span>
+      </h3>
+      <br><tr th:each="ebooks: ${ebook}"></tr>
+      <a href="img/ebookJava.pdf" download class="btn text-white" style="background-color: #dc3545!important;">
+        Faça o download agora!
       </a>
     </div>
   </div>
@@ -61,8 +68,16 @@
 <!-- Call to Action-->
 <div class="container my-5 py-4 text-center">
   <div class="container">
-    <h1 class="font-weight-black" style="color:#14100D";> Veja nossos outros e-books</h1>
-  </div>
+    <h1 class="font-weight-black" style="color:#14100D";> Bônus </h1>
+    <h3 class="font-weight-light text-black"> Vou disponibilizar
+      <span class="text-danger" style="font-family: 'Courgette', cursive";> 03 e-books  </span>
+    </h3>
+    <h3 class="font-weight-black text-black" > gratuitos
+      <span class="text-danger" style="font-family: 'Courgette', cursive";>
+       #naPrática 💻
+      </span>
+    </h3>
+    <br></div>
 </div>
 
 
@@ -73,13 +88,13 @@
     <div class="col-md-4 mb-5" >
       <div class="card h-100" style="background-color:#14100D";>
         <div class="card-footer">
-          <h3 class="card-title text-danger"> Java 8</h3>
+          <h3 class="card-title text-danger"> Spring Boot</h3>
         </div>
         <div class="card-body">
           <p class="card-text text-light">
-            Aprenda Java 8, lógica de programação e programação orientada a objetos.
+            Aprenda o principal framework de Java e todo ecossitema Spring.
           </p>
-          <a href="img/ebookJava.pdf" download class="btn text-white" style="background-color: #dc3545!important;">
+          <a href="img/ebookSpring.pdf" download class="btn text-white" style="background-color: #dc3545!important;">
             Baixe o e-book agora!
           </a>
         </div>
